@@ -1,0 +1,31 @@
+.p-top-news {
+   padding-top: rem(25);
+   @include mq('tab') {
+      padding-top: rem(32);
+   }
+}
+
+.p-top-news__inner {
+   max-width: $l-sp;
+   margin: 0 auto;
+   @include mq('tab') {
+      max-width: rem(1040);
+   }
+}
+
+.p-top-news__content {
+   @include mq('tab') {
+      display: flex;
+      align-items: start;
+   }
+}
+
+.p-top-news__all {
+   margin-top: rem(28);
+   @include mq('tab') {
+      max-width: rem(134);
+      margin-top: 0;
+      margin-left: rem(48);
+      white-space: nowrap;
+   }
+}

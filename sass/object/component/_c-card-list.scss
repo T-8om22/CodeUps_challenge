@@ -1,0 +1,20 @@
+.c-card-list {
+   margin-top: rem(-48);
+   @include mq('tab') {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: rem(-114);
+      margin-left: rem(-48);
+   }
+}
+
+.c-card-list__item {
+   display: block;
+   width: 100%;
+   margin-top: rem(48);
+   @include mq('tab') {
+      max-width: calc(100% / 2 - #{rem(48)} * 2 / 2);
+      margin-top: rem(114);
+      margin-left: rem(48);
+   }
+}

@@ -1,0 +1,67 @@
+.p-top-about {
+   padding-top: rem(80);
+   @include mq('tab') {
+      padding-top: rem(178);
+   }
+}
+
+.p-top-about__inner {
+   @include mq('tab') {
+      max-width: $l-inner;
+      margin: 0 auto;
+   }
+}
+
+.p-top-about__title {
+   text-align: center;
+}
+
+.p-top-about__title .c-title-sub {
+   @include mq('tab') {
+      display: flex;
+      justify-content: flex-start;
+   }
+}
+
+.p-top-about__title .c-title-main {
+   position: relative;
+   top: rem(-10);
+   @include mq('tab') {
+      top: rem(-60);
+   }
+}
+
+.p-top-about__content {
+   width: 100vw;
+   // width: var(--vw);
+   margin-top: rem(42);
+   margin-right: calc(50% - 50vw);
+   margin-left: calc(50% - 50vw);
+   background: $general-black;
+   @include mq('tab') {
+      position: relative;
+      z-index: $layer-up;
+      width: 100%;
+      padding: rem(80) calc(50vw - 575px) 0;
+      margin-top: rem(-38);
+      margin-right: inherit;
+      margin-left: inherit;
+      background: transparent;
+   }
+}
+
+.p-top-about__content::after {
+   @include mq('tab') {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: $layer-background;
+      // width: calc((896 / 1280 * 100%) + #{$padding-pc});
+      width: calc((750 / 1280 * 100%) + #{$padding-pc});
+      height: 100%;
+      background: $general-black;
+      transform: translateX(- #{$padding-pc});
+   }
+}

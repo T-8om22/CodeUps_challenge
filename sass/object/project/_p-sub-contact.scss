@@ -1,0 +1,17 @@
+.p-sub-contact {
+   @include mq('tab') {
+      padding-top: rem(46);
+   }
+}
+
+.p-sub-contact__inner {
+   max-width: $l-sp;
+   margin: 0 auto;
+   @include mq('tab') {
+      max-width: $l-inner;
+   }
+}
+
+.p-sub-contact__content {
+   width: 100%;
+}

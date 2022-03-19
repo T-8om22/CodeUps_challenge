@@ -1,0 +1,30 @@
+.p-sub-works {
+   width: 100%;
+   padding-top: rem(53);
+   @include mq('tab') {
+      padding-top: rem(59);
+   }
+}
+
+.p-sub-works__inner {
+   @include mq('tab') {
+      max-width: $l-inner;
+      margin: 0 auto;
+   }
+}
+
+.p-sub-works__menu {
+   
+}
+
+.p-sub-works__content {
+   width: 100vw;
+   // width: var(--vw);
+   margin-right: calc(50% - 50vw);
+   margin-left: calc(50% - 50vw);
+   @include mq('tab') {
+      width: 100%;
+      margin-right: initial;
+      margin-left: initial;
+   }
+}

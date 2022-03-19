@@ -1,0 +1,41 @@
+.p-top-content {
+   padding-top: rem(101);
+   @include mq('tab') {
+      padding-top: rem(170);
+   }
+}
+
+.p-top-content__inner {
+   @include mq('tab') {
+      max-width: $l-inner;
+      margin: 0 auto;
+   }
+}
+
+.p-top-content__title {
+   text-align: center;
+}
+
+.p-top-content__title .c-title-sub {
+   @include mq('tab') {
+      display: flex;
+      justify-content: flex-start;
+   }
+}
+
+.p-top-content__title .c-title-main {
+   position: relative;
+   top: rem(-10);
+   @include mq('tab') {
+      top: rem(-90);
+   }
+}
+
+.p-top-content__menu {
+   width: 100vw;
+   // width: var(--vw);
+   margin: rem(48) calc(50% - 50vw) 0;
+   @include mq('tab') {
+      margin-top: rem(-38);
+   }
+}

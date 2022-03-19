@@ -1,0 +1,18 @@
+.c-related-list {
+   margin-top: rem(-24);
+   @include mq('tab') {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: rem(-32);
+   }
+}
+
+.c-related-list__item {
+   display: block;
+   width: 100%;
+   margin-top: rem(24);
+   @include mq('tab') {
+      max-width: calc(100% / 4 - #{rem(32)} * 4 / 4);
+      margin-left: rem(32);
+   }
+}

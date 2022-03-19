@@ -1,0 +1,37 @@
+.p-box-body {
+
+}
+
+.p-box-body__title {
+   font-size: rem(20);
+   font-weight: $regular;
+   line-height: (29 / 20);
+   letter-spacing: 0.1em;
+   text-align: center;
+   @include mq('tab') {
+      font-size: rem(25);
+      // line-height: 1;
+      line-height: (35 / 25);
+      letter-spacing: 0.02em;
+      text-align: left;
+   }
+}
+
+.p-box-body__text {
+   margin-top: rem(24);
+   letter-spacing: 0.125em;
+   @include mq('tab') {
+      margin-top: rem(48);
+      line-height: (35 / 16);
+      letter-spacing: 0.03125em;
+   }
+}
+
+.p-box-body__more {
+   margin-top: rem(26);
+   text-align: center;
+   @include mq('tab') {
+      max-width: rem(360);
+      margin-top: rem(50);
+   }
+}

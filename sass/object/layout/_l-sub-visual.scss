@@ -1,0 +1,74 @@
+.l-sub-visual {
+   position: relative;
+   width: 100%;
+   height: rem(425);
+   text-align: center;
+   @include mq('tab') {
+      height: rem(370);
+   }
+}
+
+.l-sub-visual__img {
+   position: relative;
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+
+.l-sub-visual__img::before {
+   content: "";
+   display: block;
+   position: relative;
+   z-index: $layer-background;
+   padding-top: (425 / 375 * 100%);
+   @include mq('tab') {
+      padding-top: (370 / 1280 * 100%);
+   }
+}
+
+.l-sub-visual__img::after {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: $layer-default;
+   width: 100%;
+   height: 100%;
+   background: rgba($primary-color, 0.2);
+}
+
+.l-sub-visual__img img {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: $layer-background;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+.l-sub-visual__content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: $layer-up;
+   width: 100%;
+   padding-right: rem(16);
+   padding-left: rem(16);
+}
+
+.l-sub-visual__title {
+   font-size: rem(30);
+   font-weight: $bold;
+   line-height: 1;
+   letter-spacing: 0.06666em;
+   text-transform: uppercase;
+   @include mq('tab') {
+      font-size: rem(35);
+      letter-spacing: 0.05714em;
+   }
+}

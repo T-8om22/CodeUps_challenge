@@ -1,0 +1,108 @@
+.l-main-visual {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   text-align: center;
+}
+
+.l-main-visual__swiper {
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+}
+
+.l-main-visual__swiper::after {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: $layer-default;
+   width: 100%;
+   height: 100%;
+   background: rgba($primary-color, 0.2);
+}
+
+.l-main-visual__slide {
+   
+}
+
+@keyframes zoomUp {
+   0% {
+   transform: scale(1);
+   }
+   100% {
+   transform: scale(1.15);
+   }
+}
+
+.swiper-slide-active .l-main-visual__slide-img,
+.swiper-slide-duplicate-active .l-main-visual__slide-img,
+.swiper-slide-prev .l-main-visual__slide-img {
+   animation: zoomUp 10s linear 0s 1 normal both;
+}
+
+.l-main-visual__slide-img-1 {
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+   background: url(./../img/top/sp/main-visual_01.jpg) center / cover;
+   @include mq('tab') {
+      background: url(./../img/top/pc/main-visual_01.jpg) center / cover;
+   }
+}
+.l-main-visual__slide-img-2 {
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+   background: url(./../img/top/sp/main-visual_02.jpg) center / cover;
+   @include mq('tab') {
+      background: url(./../img/top/pc/main-visual_02.jpg) center / cover;
+   }
+}
+.l-main-visual__slide-img-3 {
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+   background: url(./../img/top/sp/main-visual_03.jpg) center / cover;
+   @include mq('tab') {
+      background: url(./../img/top/pc/main-visual_03.jpg) center / cover;
+   }
+}
+
+.l-main-visual__content {
+   display: block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: $layer-up;
+   width: 100%;
+   padding-right: rem(16);
+   padding-left: rem(16);
+}
+
+.l-main-visual__title {
+   display: block;
+   font-size: rem(28);
+   font-weight: $bold;
+   line-height: 1;
+   letter-spacing: 0.0178em;
+   @include mq('tab') {
+      font-size: rem(50);
+      letter-spacing: 0.01em;
+   }
+}
+
+.l-main-visual__sub-title {
+   display: block;
+   margin-top: rem(24);
+   font-size: rem(20);
+   font-weight: $bold;
+   line-height: 1;
+   letter-spacing: 0.025em;
+   @include mq('tab') {
+      font-size: rem(25);
+      letter-spacing: 0.02em;
+   }
+}

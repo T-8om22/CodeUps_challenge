@@ -1,0 +1,23 @@
+.c-form-submit {
+   display: inline-block;
+   width: 100%;
+   padding: rem(10) rem(20) rem(10);
+   background: $general-white;
+   border: 2px solid transparent;
+   color: $general-black;
+   font-size: rem(20);
+   font-weight: $regular;
+   line-height: 1;
+   letter-spacing: 0.1em;
+   @include mq('tab') {
+      padding-top: rem(15);
+      padding-bottom: rem(15);
+   }
+}
+
+.c-form-submit:hover,
+.c-form-submit:focus {
+   background: $hover-color;
+   border: 2px solid $accent-color;
+   box-shadow: 0 0 rem(5) $accent-color;
+}

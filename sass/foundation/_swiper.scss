@@ -1,0 +1,72 @@
+.swiper {
+   margin: 0;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+   bottom: 0;
+   @include mq('tab') {
+      bottom: rem(48);
+   }
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+   margin: 0 rem(6);
+}
+
+.swiper-pagination-bullet {
+   background: #C4C4C4;
+   opacity: 1;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+   background: $hover-color;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+   width: rem(30);
+   height: rem(30);
+   margin-top: rem(-15);
+   border-radius: 50%;
+   background: $primary-color;
+   @include mq('tab') {
+      width: rem(50);
+      height: rem(50);
+      margin-top: rem(-25);
+   }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+   content: "";
+   position: absolute;
+   top: 50%;
+   width: rem(13);
+   height: rem(13);
+   transform: translateY(-50%) rotate(45deg);
+   @include mq('tab') {
+      width: rem(22);
+      height: rem(22);
+   }
+}
+
+.swiper-button-prev::after {
+   left: rem(12);
+   border-bottom: 3px solid $accent-color;
+   border-left: 3px solid $accent-color;
+   @include mq('tab') {
+      left: rem(20);
+   }
+}
+
+.swiper-button-next::after {
+   right: rem(12);
+   border-top: 3px solid $accent-color;
+   border-right: 3px solid $accent-color;
+   @include mq('tab') {
+      right: rem(20);
+   }
+}

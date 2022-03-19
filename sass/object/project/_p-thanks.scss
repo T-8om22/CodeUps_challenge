@@ -1,0 +1,38 @@
+.p-thanks {
+   padding-top: rem(80);
+   @include mq('tab') {
+      padding-top: rem(150);
+   }
+}
+
+.p-thanks__inner {
+   max-width: $l-sp;
+   margin: 0 auto;
+   @include mq('tab') {
+      max-width: $l-inner;
+   }
+}
+
+.p-thanks__content {
+   text-align: center;
+}
+
+.p-thanks__title,
+.p-thanks__text {
+   font-size: rem(20);
+   line-height: 1;
+   letter-spacing: 0.1em;
+   @include mq('tab') {
+      font-size: rem(30);
+      letter-spacing: 0.0666em;
+   }
+}
+
+.p-thanks__text {
+   margin-top: rem(80);
+}
+
+.p-thanks__to-top {
+   max-width: rem(360);
+   margin: rem(80) auto 0;
+}

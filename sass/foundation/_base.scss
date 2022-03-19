@@ -1,0 +1,85 @@
+/* リキッドレイアウト対応 */
+html {
+	//375px~787px
+	font-size: vw(375, 16);
+
+	@include mq("sp") {
+		font-size: 16px;
+	}
+
+	//787px~inner
+	@include mq("tab") {
+		font-size: vw(strip-unit($l-inner), 16);
+	}
+
+	//inner~max-screen
+	@media (min-width: $l-inner) {
+		font-size: 16px;
+	}
+}
+
+/* pcの電話番号発信対応 */
+a[href^="tel:"] {
+   @include mq("tab") {
+      pointer-events: none;
+   }
+}
+
+body {
+   position: relative;
+   z-index: $layer-background;
+   background: $primary-color;
+   color: $general-white;
+   font-family: $font-family-base;
+   font-size: $font-size-base;
+   font-weight: $regular;
+   line-height: $line-height-base;
+}
+
+a {
+   color: inherit;
+   text-decoration: none;
+	cursor: pointer;
+   transition: opacity 0.3s;
+}
+
+a:hover {
+   @include mq("tab") {
+      // opacity: $hover-opacity;
+   }
+}
+
+img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	border: none;
+	// vertical-align: top;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+	filter: blur(10px);
+}
+
+b,
+strong {
+	font-weight: $bold;
+}
+
+table {
+	width: 100%;
+	table-layout: fixed;
+	border: 1px solid;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th,
+td {
+	padding: 4px 6px;
+	text-align: left;
+	vertical-align: top;
+	border: 1px solid;
+}

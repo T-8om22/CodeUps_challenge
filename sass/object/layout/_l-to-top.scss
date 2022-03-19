@@ -1,0 +1,40 @@
+.l-to-top {
+   position: fixed;
+   right: rem(20);
+   bottom: rem(40);
+   z-index: $layer-floating;
+   @include mq('tab') {
+      right: rem(32);
+      bottom: rem(32);
+   }
+}
+
+.l-to-top a {
+   position: relative;
+   display: block;
+   width: rem(45);
+   height: rem(45);
+   background: $general-white;
+   transition: all 0.3s ease 0s;
+}
+
+.l-to-top a::after {
+   content: "";
+   position: absolute;
+   top: rem(20);
+   right: rem(14);
+   width: rem(16);
+   height: rem(16);
+   border-top: 2px solid $general-black;
+   border-left: 2px solid $general-black;
+   transform: rotate(45deg);
+}
+
+.l-to-top a:hover {
+   background: $general-black;
+}
+
+.l-to-top a:hover::after {
+   border-top: 2px solid $general-white;
+   border-left: 2px solid $general-white;
+}

@@ -1,0 +1,20 @@
+.c-post-list {
+   margin-top: rem(-24);
+   @include mq('tab') {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: rem(-48);
+      margin-left: rem(-25);
+   }
+}
+
+.c-post-list__item {
+   display: block;
+   width: 100%;
+   margin-top: rem(24);
+   @include mq('tab') {
+      max-width: calc(100% / 3 - #{rem(25)} * 3 / 3);
+      margin-top: rem(48);
+      margin-left: rem(25);
+   }
+}

@@ -1,0 +1,28 @@
+.wpcf7-spinner {
+   display: none;
+}
+
+.wpcf7-not-valid-tip {
+   display: none;
+}
+
+.error-message {
+   padding: rem(16) 0 rem(32);
+   color: #FF5757;
+   letter-spacing: 0.125em;
+   text-align: center;
+   visibility: hidden;
+   @include mq('tab') {
+      padding-top: rem(0);
+   }
+}
+
+.wpcf7-form.invalid .error-message {
+   visibility: visible;
+}
+
+input[type=text].wpcf7-text.wpcf7-not-valid,
+input[type=email].wpcf7-email.wpcf7-not-valid,
+textarea.wpcf7-textarea.wpcf7-not-valid {
+   background: #FFDCDC;
+}

@@ -1,0 +1,18 @@
+.p-sub-news {
+   padding-top: rem(69);
+   @include mq('tab') {
+      padding-top: rem(53);
+   }
+}
+
+.p-sub-news__inner {
+   max-width: $l-sp;
+   margin: 0 auto;
+   @include mq('tab') {
+      max-width: rem(860);
+   }
+}
+
+.p-sub-news__content {
+
+}

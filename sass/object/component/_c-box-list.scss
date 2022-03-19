@@ -1,0 +1,73 @@
+.c-box-list {
+
+}
+
+.c-box-list__item {
+   @include mq('tab') {
+      display: flex;
+   }
+}
+
+.c-box-list__item + .c-box-list__item {
+   margin-top: rem(48);
+   @include mq('tab') {
+      margin-top: rem(104);
+   }
+}
+
+.c-box-list__item--center {
+   @include mq('tab') {
+      align-items: center;
+   }
+}
+
+
+.c-box-list__item--reverse {
+   @include mq('tab') {
+      flex-direction: row-reverse;
+   }
+}
+
+.c-box-list__part {
+   width: 100%;
+}
+
+.c-box-list__part:nth-child(2n + 1) {
+   position: relative;
+   padding-bottom: rem(24);
+   @include mq('tab') {
+      max-width: rem(557);
+      padding-bottom: 0;
+   }
+}
+
+.c-box-list__part:nth-child(2n) {
+   max-width: $l-sp;
+   padding: 0 $padding-sp;
+   margin: 0 auto;
+   @include mq('tab') {
+      max-width: rem(510);
+      padding: 0;
+      margin: 0;
+   }
+}
+
+#top .c-box-list__part {
+   @include mq('tab') {
+      padding-bottom: rem(80);
+   }
+}
+
+#top .c-box-list__part:nth-child(2n) {
+   padding-bottom: rem(20);
+   @include mq('tab') {
+      padding-bottom: rem(80);
+   }
+}
+
+
+#sub-content .c-box-list__part:nth-child(2n) {
+   @include mq('tab') {
+      padding-top: rem(20);
+   }
+}

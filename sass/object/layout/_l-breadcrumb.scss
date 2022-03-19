@@ -1,0 +1,19 @@
+.l-breadcrumb {
+   width: 100%;
+   // max-width: $l-sp + strip-unit($padding-sp) * 2;
+   height: inherit;
+   padding-top: rem(16);
+   padding-right: $padding-sp;
+   padding-bottom: rem(16);
+   padding-left: $padding-sp;
+   margin: 0 auto;
+   font-family: $font-family-sub;
+   line-height: 1;
+   letter-spacing: 0.0625em;
+   // text-transform: uppercase;
+   @include mq('tab') {
+      max-width: $l-inner + strip-unit($padding-pc) * 2;
+      padding-right: $padding-pc;
+      padding-left: $padding-pc;
+   }
+}

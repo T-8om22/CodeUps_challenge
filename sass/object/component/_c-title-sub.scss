@@ -1,0 +1,14 @@
+.c-title-sub {
+   display: inline-block;
+   color: rgba($title-color, 0.27);
+   font-family: $font-family-english;
+   font-size: rem(50);
+   // line-height: (72 / 50);
+   line-height: 1;
+   letter-spacing: 0.04em;
+   text-transform: capitalize;
+   @include mq('tab') {
+      font-size: rem(110);
+      letter-spacing: 0.01818em;
+   }
+}

@@ -1,0 +1,75 @@
+form {
+	margin: 0;
+	padding: 0;
+}
+
+label {
+	display: inline-block;
+}
+
+input,
+button,
+select,
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: transparent;
+	background-color: transparent;
+	background-image: none;
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+	color: inherit;
+	font-family: inherit;
+	font-size: rem(16);
+	line-height: inherit;
+	text-decoration: none;
+	outline: none;
+}
+
+input:focus,
+button:focus,
+select:focus,
+textarea:focus {
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+
+input:hover,
+button:hover,
+select:hover,
+textarea:hover {
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+textarea {
+	overflow: auto;
+	-ms-overflow-style: scrollbar;
+	resize: vertical;
+}
+
+input[type="submit"],
+input[type="button"],
+label,
+button,
+select {
+	cursor: pointer;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+.c-form-submit::-moz-foucus-inner {
+	border: none;
+	padding: 0;
+}

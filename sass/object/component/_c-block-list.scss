@@ -1,0 +1,13 @@
+.c-block-list {
+   margin-top: rem(-38);
+   @include mq('tab') {
+      margin-top: rem(-48);
+   }
+}
+
+.c-block-list__item {
+   margin-top: rem(38);
+   @include mq('tab') {
+      margin-top: rem(48);
+   }
+}

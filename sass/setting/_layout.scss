@@ -1,0 +1,30 @@
+/* Layout */
+$l-sp: 540px;
+$l-tab: 768px;
+$l-inner: 1100px;
+$l-pc: 1440px;
+$l-4k: 1920px;
+
+/* Break-Point */
+$breakpoints: (
+	"start": "screen and (min-width: 375px)",
+	"sp": "screen and (min-width: #{$l-sp})",
+	"tab": "screen and (min-width: #{$l-tab})",
+	"pc": "screen and (min-width: #{$l-inner})",
+	"lg": "screen and (min-width: #{$l-pc})",
+	"end": "screen and (min-width: #{$l-4k})",
+);
+
+/* Padding */
+$padding-pc: 25px;
+$padding-sp: 20px;
+
+/* Layer */
+$layer-modal: 100;
+$layer-drawer: 40;
+$layer-floating: 30;
+$layer-header: 20;
+$layer-footer: 10;
+$layer-up: 2;
+$layer-default: 1;
+$layer-background: -1;

@@ -1,0 +1,17 @@
+.c-form-text-field {
+   width: 100%;
+   padding: rem(10) rem(9) rem(9);
+   background: $general-white;
+   border: 2px solid transparent;
+   color: $general-black;
+   font-weight: $regular;
+   @include mq('tab') {
+      padding: rem(6) rem(9) rem(6);
+   }
+}
+
+.c-form-text-field:hover,
+.c-form-text-field:focus {
+   border: 2px solid $accent-color;
+   box-shadow: 0 0 rem(5) $accent-color;
+}

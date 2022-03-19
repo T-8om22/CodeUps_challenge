@@ -1,0 +1,18 @@
+.c-form-textarea {
+   width: 100%;
+   height: rem(250);
+   padding: rem(10) rem(9) rem(9);
+   background: $general-white;
+   border: 2px solid transparent;
+   color: $general-black;
+   font-weight: $regular;
+   @include mq('tab') {
+      height: rem(300);
+   }
+}
+
+.c-form-textarea:hover,
+.c-form-textarea:focus {
+   border: 2px solid $accent-color;
+   box-shadow: 0 0 rem(5) $accent-color;
+}

@@ -1,0 +1,16 @@
+.p-navigation-drawer {
+   height: 100%;
+   padding: rem(200) 0;
+   background: $primary-color;
+   overflow: scroll;
+}
+
+.p-navigation-drawer__item {
+
+}
+
+.p-navigation-drawer__item a {
+   display: block;
+   padding: rem(16) 0;
+   text-align: center;
+}

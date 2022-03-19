@@ -1,0 +1,26 @@
+.p-sub-blog {
+   width: 100%;
+   padding-top: rem(53);
+   @include mq('tab') {
+      padding-top: rem(59);
+   }
+}
+
+.p-sub-blog__inner {
+   max-width: $l-sp;
+   margin: 0 auto;
+   @include mq('tab') {
+      max-width: $l-inner;
+   }
+}
+
+.p-sub-blog__menu {
+   
+}
+
+.p-sub-blog__content {
+   margin-top: rem(44);
+   @include mq('tab') {
+      margin-top: 0;
+   }
+}

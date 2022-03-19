@@ -1,0 +1,54 @@
+.p-form {
+
+}
+
+.p-form__items {
+   margin-top: rem(-32);
+   @include mq('tab') {
+      padding: 0 (281 / 1100 * 100%) 0 (123 / 1100 * 100%);
+      margin-top: rem(-45);
+   }
+}
+
+.p-form__item {
+   margin-top: rem(32);
+   @include mq('tab') {
+      display: flex;
+      align-items: center;
+      margin-top: rem(45);
+   }
+}
+
+.p-form__item--initial {
+   @include mq('tab') {
+      align-items: start;
+   }
+}
+
+.p-form__question {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   max-width: rem(137);
+   @include mq('tab') {
+      justify-content: flex-end;
+   }
+}
+
+.p-form__answer {
+   width: 100%;
+   margin-top: rem(16);
+   @include mq('tab') {
+      max-width: calc(100% - #{rem(137)});
+      margin-top: 0;
+      margin-left: rem(24);
+   }
+}
+
+.p-form__submit {
+   max-width: rem(360);
+   margin: rem(48) auto 0;
+   @include mq('tab') {
+      margin-top: rem(56);
+   }
+}

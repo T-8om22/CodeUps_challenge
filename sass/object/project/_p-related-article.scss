@@ -1,0 +1,36 @@
+.p-related-article {
+   padding-top: rem(120);
+   @include mq('tab') {
+      padding-top: rem(104);
+   }
+}
+
+.p-related-article__inner {
+   max-width: $l-sp;
+   margin: 0 auto;
+   @include mq('tab') {
+      max-width: $l-inner;
+   }
+}
+
+.p-related-article__title {
+   padding: rem(12) rem(20);
+   font-size: rem(16);
+   font-weight: $regular;
+   line-height: 1;
+   background: $primary-color;
+   border: 1px solid $general-white;
+   letter-spacing: 0.125em;
+   white-space: nowrap;
+   text-align: center;
+   @include mq('tab') {
+      background: $general-black;
+   }
+}
+
+.p-related-article__content {
+   margin-top: rem(32);
+   @include mq('tab') {
+      margin-top: rem(60);
+   }
+}

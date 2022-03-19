@@ -1,0 +1,11 @@
+.c-title-main {
+   font-size: rem(20);
+   font-weight: $regular;
+   // line-height: (30 / 20);
+   line-height: 1;
+   letter-spacing: 0.1em;
+   @include mq('tab') {
+      font-size: rem(30);
+      letter-spacing: 0.06666em;
+   }
+}

@@ -1,0 +1,50 @@
+.l-container {
+   position: relative;
+   z-index: $layer-background;
+   width: 100%;
+   padding-right: $padding-sp;
+   padding-bottom: rem(120);
+   padding-left: $padding-sp;
+   overflow: hidden;
+   @include mq('tab') {
+      padding-right: $padding-pc;
+      padding-bottom: rem(150);
+      padding-left: $padding-pc;
+   }
+}
+
+#top.l-container::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-color: $primary-color;
+   border-top: 2px solid $title-color;
+   transform: skewY(60deg) translateY(650px);
+   z-index: $layer-background;
+   @include mq('tab') {
+      transform: skewY(45deg) translateY(800px);
+   }
+}
+
+#top.l-container::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-color: $primary-color;
+   border-top: 3px solid $title-color;
+   transform: skewY(-75deg) translateY(1860px);
+   z-index: $layer-background;
+   @include mq('tab') {
+      border-top: 2px solid $title-color;
+      transform: skewY(-45deg) translateY(2080px);
+   }
+   @include mq('end') {
+      transform: skewY(-45deg) translateY(2270px);
+   }
+}
